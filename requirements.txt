@@ -10,3 +10,4 @@ catboost
 ipykernel
 openpyxl
 dill
+flask

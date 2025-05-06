@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADHD & Sex Prediction Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        nav {
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('model') }}">Model Performance</a>
+        <a href="{{ url_for('insights') }}">Insights</a>
+        <a href="{{ url_for('limitations') }}">Limitations</a>
+    </nav>
+
+    {% block content %}{% endblock %}
+</body>
+</html>

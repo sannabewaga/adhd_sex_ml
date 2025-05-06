@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Insights & Interpretations</h2>
+
+<h3>🧠 ADHD Prediction</h3>
+<ul>
+  <li>The model shows moderate performance with an accuracy of 66%.</li>
+  <li>Better performance on the positive class (ADHD = 1) with higher precision and recall.</li>
+  <li>May be biased due to class imbalance or insufficient features capturing behavioral aspects.</li>
+  <li>This model should not be used for diagnosis — only as a research or screening tool.</li>
+</ul>
+
+<h3>⚥ Sex Prediction</h3>
+<ul>
+  <li>Model achieved 75% accuracy, with stronger performance on class 0 (likely male/female based on your encoding).</li>
+  <li>Class 1 predictions were less accurate, suggesting possible feature overlap or insufficient representation.</li>
+  <li>Could be useful for identifying patterns, but sensitive to dataset bias or cultural factors.</li>
+</ul>
+{% endblock %}

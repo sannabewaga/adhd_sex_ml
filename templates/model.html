@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Model Performance</h2>
+
+<h3>🧠 ADHD Prediction (Logistic Regression)</h3>
+<ul>
+  <li><strong>Accuracy:</strong> {{ metrics.adhd_model.accuracy }}</li>
+  <li><strong>Precision:</strong> {{ metrics.adhd_model.precision }}</li>
+  <li><strong>Recall:</strong> {{ metrics.adhd_model.recall }}</li>
+  <li><strong>F1 Score:</strong> {{ metrics.adhd_model.f1_score }}</li>
+  <li><strong>Support:</strong> {{ metrics.adhd_model.support }}</li>
+  <li><em>{{ metrics.adhd_model.notes }}</em></li>
+</ul>
+
+<h3>⚥ Sexual Behavior Prediction (Logistic Regression)</h3>
+<ul>
+  <li><strong>Accuracy:</strong> {{ metrics.sex_model.accuracy }}</li>
+  <li><strong>Precision:</strong> {{ metrics.sex_model.precision }}</li>
+  <li><strong>Recall:</strong> {{ metrics.sex_model.recall }}</li>
+  <li><strong>F1 Score:</strong> {{ metrics.sex_model.f1_score }}</li>
+  <li><strong>Support:</strong> {{ metrics.sex_model.support }}</li>
+  <li><em>{{ metrics.sex_model.notes }}</em></li>
+</ul>
+
+<h3>Confusion Matrix (Sex Model)</h3>
+<img src="{{ url_for('static', filename='confusion_matrix.png') }}" width="400">
+
+{% endblock %}

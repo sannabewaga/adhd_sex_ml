@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Limitations</h2>
+<ul>
+  <li>Data had 20,000+ features, but most are not interpretable or practical for real-time use.</li>
+  <li>No user-facing form input since asking for 20,000 responses is impractical.</li>
+  <li>Models are not generalizable beyond the research dataset due to lack of external validation.</li>
+  <li>Possible class imbalance, especially in ADHD model, may skew predictions.</li>
+  <li>Ethical implications in predicting psychological and sensitive traits must be acknowledged.</li>
+</ul>
+{% endblock %}

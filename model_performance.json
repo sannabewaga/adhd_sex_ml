@@ -1,0 +1,21 @@
+{
+    "adhd_model": {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.66,
+      "precision": 0.60,
+      "recall": 0.59,
+      "f1_score": 0.60,
+      "support": 243,
+      "notes": "Macro average values used for balance"
+    },
+    "sex_model": {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.75,
+      "precision": 0.71,
+      "recall": 0.71,
+      "f1_score": 0.71,
+      "support": 243,
+      "notes": "Macro average values; Model performed better on class 0"
+    }
+  }
+  
